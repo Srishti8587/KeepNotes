@@ -4,7 +4,10 @@
   "description": "This is backend for NotesApp",
   "main": "index.js",
   "scripts": {
-     "start":"nodemon index.js"
+     "start":"nodemon index.js",
+     "index" :"node index.js",
+     "frontend" : "cd notefrontend && npm start",
+     "dev": "concurrently \"npm index\" \"npm run frontend\""
   },
   "author": "Srishti Gupta",
   "license": "ISC",
